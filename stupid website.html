@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Robux Generator - Totally Legit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            overflow: hidden;
+            background: url('https://cataas.com/cat/gif') repeat;
+            background-size: 300px 300px;
+            transition: transform 1s linear;
+            cursor: url('https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif'), auto; /* Keep tiny cat cursor for goofiness */
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border: 5px solid hotpink;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 5px yellow;
+        }
+        #robuxAmount {
+            font-size: 2em;
+            color: cyan;
+        }
+        input[type="range"] {
+            width: 300px;
+        }
+        button {
+            font-size: 1.5em;
+            margin: 10px;
+            padding: 10px 20px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: purple;
+        }
+        .meme-float {
+            position: absolute;
+            font-size: 2em;
+            color: yellow;
+            animation: float 5s infinite;
+            pointer-events: none;
+        }
+        @keyframes float {
+            0% { transform: translate(0, 0); opacity: 1; }
+            100% { transform: translate(100vw, -100vh); opacity: 0; }
+        }
+        .shake {
+            animation: shake 0.5s infinite;
+        }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Free Robux Generator</h1>
+        <p>Slide to choose your Robux amount:</p>
+        <input type="range" min="0" max="100" value="0" id="slider">
+        <div id="robuxAmount">0</div>
+        <button id="generateBtn">Generate Robux</button>
+        <button id="fuckYouBtn">Fuck You</button>
+    </div>
+
+    <audio id="idiotAudio" loop>
+        <source src="https://www.myinstants.com/media/sounds/you-are-an-idiot-42738.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const amountDisplay = document.getElementById('robuxAmount');
+        const generateBtn = document.getElementById('generateBtn');
+        const fuckYouBtn = document.getElementById('fuckYouBtn');
+        const body = document.body;
+        const audio = document.getElementById('idiotAudio');
+
+        // Local memes assuming extensions
+        const memes = [
+            'images/meme1.jpg',
+            'images/meme3.jpg',
+            'images/meme4.jpg',
+            'images/meme5.jpg',
+            'images/meme6.gif'
+        ];
+
+        // Update robux display
+        slider.addEventListener('input', () => {
+            let value = slider.value;
+            if (value == 100) {
+                amountDisplay.textContent = 'yes.';
+            } else {
+                let robux = Math.floor(value / 100 * 9999999999);
+                amountDisplay.textContent = robux;
+                if (robux === 69420) {
+                    alert('Nice. You found the Easter egg. Have a virtual cookie 🍪');
+                }
+                if (robux > 1000000000) {
+                    body.classList.add('shake');
+                } else {
+                    body.classList.remove('shake');
+                }
+            }
+        });
+
+        // Generate button
+        generateBtn.addEventListener('click', () => {
+            alert('Generating...');
+            setTimeout(() => {
+                window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
+                alert('Lol, no robux for you, peasant!');
+            }, 2000);
+        });
+
+        // Fuck You button
+        let popups = [];
+        fuckYouBtn.addEventListener('click', () => {
+            audio.play();
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
+                }, i * 500);
+            }
+            spamIdiotPopups();
+            // Start rotating the body for extra chaos
+            setInterval(() => {
+                body.style.transform = `rotate(${Math.random() * 360}deg)`;
+            }, 1000);
+        });
+
+        // Spam idiot popups like the classic site
+        function spamIdiotPopups() {
+            for (let i = 0; i < 10; i++) {
+                let popup = window.open('', '_blank', 'width=400,height=300,left=' + (Math.random() * screen.width) + ',top=' + (Math.random() * screen.height));
+                if (popup) {
+                    let randomMeme = memes[Math.floor(Math.random() * memes.length)];
+                    popup.document.write(`
+                        <html>
+                        <head>
+                            <style>
+                                body { background: yellow; text-align: center; font-family: 'Comic Sans MS', cursive; }
+                                h1 { animation: flash 0.5s infinite alternate; color: black; }
+                                @keyframes flash {
+                                    0% { color: black; }
+                                    100% { color: red; }
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            <h1>You are an idiot!</h1>
+                            <audio autoplay loop>
+                                <source src="https://www.myinstants.com/media/sounds/you-are-an-idiot-42738.mp3" type="audio/mpeg">
+                            </audio>
+                            <img src="${randomMeme}" style="width:200px; height:auto;">
+                        </body>
+                        </html>
+                    `);
+                    popup.document.close();
+                    popups.push(popup);
+                }
+            }
+            // Make popups jiggle around like the old days
+            setInterval(() => {
+                popups.forEach(p => {
+                    if (p && !p.closed) {
+                        p.moveBy((Math.random() - 0.5) * 20, (Math.random() - 0.5) * 20);
+                    }
+                });
+            }, 50);
+        }
+
+        // Floating meme texts
+        const memeTexts = ['Ligma', 'Deez Nuts', 'Sus', 'Amogus', 'Poggers', 'Yeet'];
+        setInterval(() => {
+            let float = document.createElement('div');
+            float.classList.add('meme-float');
+            float.textContent = memeTexts[Math.floor(Math.random() * memeTexts.length)];
+            float.style.left = `${Math.random() * 100}vw`;
+            float.style.top = `${Math.random() * 100}vh`;
+            body.appendChild(float);
+            setTimeout(() => float.remove(), 5000);
+        }, 1000);
+
+        // Extra random bullshit: random alerts every now and then
+        setInterval(() => {
+            if (Math.random() < 0.1) {
+                alert(memeTexts[Math.floor(Math.random() * memeTexts.length)]);
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
